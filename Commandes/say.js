@@ -19,9 +19,9 @@ module.exports = {
     async run(client, interaction, args) {
         const userMessage = interaction.options.getString('message');
 
-        // Envoyer le message à la place de la réponse à l'interaction
+        
         await interaction.channel.send(userMessage);
-        // Ensuite, répondre à l'interaction pour la faire disparaître sans envoyer de message visible
+        
         await interaction.deferReply({ ephemeral: true });
       },
     };
