@@ -5,9 +5,9 @@ const { connection } = require("mongoose");
 const os = require('os')
 
 const button = new ActionRowBuilder()
-    .addComponents(
+   .addComponents(
         new ButtonBuilder()
-        .setURL(`https://discord.com/api/oauth2/authorize?client_id=1120791941278334976&permissions=8&scope=bot`)
+        .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.id}&permissions=8&scope=bot`)
         .setLabel('Inviter')
         .setStyle(ButtonStyle.Link)
         .setEmoji("💻"),
@@ -19,7 +19,7 @@ const button = new ActionRowBuilder()
         .setEmoji("📚"),
 
         new ButtonBuilder()
-        .setURL(`https://discord.gg/HzC3h6Td`)
+        .setURL(config.inviteLink)
         .setLabel("Serveur support")
         .setStyle(ButtonStyle.Link)
         .setEmoji("👮")
