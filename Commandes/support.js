@@ -20,7 +20,7 @@ module.exports = {
         const row = new ActionRowBuilder()
             .addComponents(button);
 
-        // Créer l'embed
+        
         const embed = new EmbedBuilder()
             .setTitle('Support')
             .setDescription(`Vous avez besoin d'aide ? Rejoignez notre [serveur de support](${config.inviteLink}).`)
